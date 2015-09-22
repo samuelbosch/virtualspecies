@@ -45,14 +45,14 @@ linearFun <- function(x, a, b) {a * x + b}
 #' \item{\code{alpha} very far from 0 will result in a linear function.}
 #' }
 #' @examples
-#' x <- 1:100
-#' y <- logisticFun(x, alpha = -10, b = 50)
+#' x <- seq(0, 1, 0.1)
+#' y <- logisticFun(x, alpha = -0.1, b = 0.5)
 #' plot(y ~ x, type = "l")
 #' 
 #' # The effect of alpha:
-#' y1 <- logisticFun(x, alpha = -0.01, b = 50)
-#' y2 <- logisticFun(x, alpha = -10, b = 50)
-#' y3 <- logisticFun(x, alpha = -1000, b = 50)
+#' y1 <- logisticFun(x, alpha = -0.001, b = 0.5)
+#' y2 <- logisticFun(x, alpha = -0.1, b = 0.5)
+#' y3 <- logisticFun(x, alpha = -10, b = 0.5)
 #' 
 #' par(mfrow = c(1, 3))
 #' plot(y1 ~ x, type = "l", main = expression(alpha %->% 0))
